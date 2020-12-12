@@ -56,7 +56,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-family: "Poppins", sans-serif;
-  color: #1f2226; }
+  color: #333; }
 
 h1,
 h2,
@@ -67,7 +67,7 @@ h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   margin-top: 0;
-  color: #1f2226; }
+  color: #1a1a1a; }
 
 p {
   font-size: 14px;
@@ -86,7 +86,7 @@ button {
   line-height: inherit;
   text-decoration: none;
   cursor: pointer;
-  color: #1f2226; }
+  color: #333; }
 
 a,
 button,
@@ -1143,10 +1143,13 @@ textarea:focus {
   transition: all .3s ease 0s; }
 
 .logo {
-  padding-top: 40px;
+  padding-top: 25px;
   -webkit-transition: all .3s ease 0s;
   -o-transition: all .3s ease 0s;
   transition: all .3s ease 0s; }
+
+.logo h1 {
+  font-weight: 500; }
 
 .main-menu {
   margin-left: 30px; }
@@ -1220,7 +1223,7 @@ textarea:focus {
         .main-menu > nav > ul > li ul.submenu li a {
           font-weight: 300;
           font-size: 14px;
-          color: #000000;
+          color: #333;
           font-family: "Poppins", sans-serif;
           letter-spacing: .2px;
           display: block;
@@ -1258,7 +1261,7 @@ textarea:focus {
         padding-right: 0;
         width: 25%; }
         .main-menu > nav > ul > li ul.mega-menu > li a.menu-title {
-          color: #000000;
+          color: #333;
           font-size: 16px;
           font-family: "Poppins", sans-serif;
           letter-spacing: .2px;
@@ -1274,7 +1277,7 @@ textarea:focus {
             .main-menu > nav > ul > li ul.mega-menu > li ul li a {
               font-weight: 300;
               font-size: 14px;
-              color: #000000;
+              color: #333;
               font-family: "Poppins", sans-serif;
               letter-spacing: .2px;
               display: block;
@@ -1341,25 +1344,25 @@ textarea:focus {
         .header-right-wrap .setting-wrap .setting-content {
           max-height: 400px; } }
       .header-right-wrap .setting-wrap .setting-content ul li {
-        padding-bottom: 25px; }
+        padding-bottom: 50px; }
         .header-right-wrap .setting-wrap .setting-content ul li:last-child {
           padding-bottom: 0px; }
         .header-right-wrap .setting-wrap .setting-content ul li h4 {
           font-size: 16px;
           margin: 0;
-          color: #000000;
+          color: #333;
           padding-bottom: 19px;
           border-bottom: 1px solid #cccccc;
           letter-spacing: .2px; }
         .header-right-wrap .setting-wrap .setting-content ul li ul {
           padding-top: 18px; }
           .header-right-wrap .setting-wrap .setting-content ul li ul li {
-            padding-bottom: 31px; }
+            padding-bottom: 25px; }
             .header-right-wrap .setting-wrap .setting-content ul li ul li:last-child {
               padding-bottom: 0px; }
             .header-right-wrap .setting-wrap .setting-content ul li ul li a {
               letter-spacing: .2px;
-              color: #000000;
+              color: #333;
               font-weight: 300;
               display: block;
               line-height: 1; }
@@ -1387,7 +1390,7 @@ textarea:focus {
         position: absolute;
         right: -7px;
         top: -19px;
-        background-color: #1f2226;
+        background-color: #333;
         color: #fff;
         font-size: 13px;
         display: inline-block;
@@ -1453,9 +1456,9 @@ textarea:focus {
         font-size: 16px;
         margin: 0;
         line-height: 1;
-        color: #000000; }
+        color: #333; }
       .cart-wrap .shopping-cart-content .shopping-cart-top a {
-        color: #000000;
+        color: #333;
         font-size: 16px; }
         .cart-wrap .shopping-cart-content .shopping-cart-top a:hover {
           color: #ff3535; }
@@ -1510,7 +1513,7 @@ textarea:focus {
           font-weight: 300;
           letter-spacing: .2px; }
           .cart-wrap .shopping-cart-content ul li .shopping-cart-title h4 a {
-            color: #000000;
+            color: #333;
             line-height: 1;
             display: block; }
             .cart-wrap .shopping-cart-content ul li .shopping-cart-title h4 a:hover {
@@ -1518,7 +1521,7 @@ textarea:focus {
         .cart-wrap .shopping-cart-content ul li .shopping-cart-title span {
           font-size: 14px;
           font-weight: 300;
-          color: #000000;
+          color: #333;
           letter-spacing: .2px; }
         .cart-wrap .shopping-cart-content ul li:last-child {
           margin-bottom: 0; }
@@ -1549,7 +1552,7 @@ textarea:focus {
             margin: 15px 0 15px; } }
         .cart-wrap .shopping-cart-content .shopping-cart-bottom .shopping-cart-total h4 {
           font-size: 16px;
-          color: #000000;
+          color: #333;
           letter-spacing: .2px;
           margin: 0; }
           .cart-wrap .shopping-cart-content .shopping-cart-bottom .shopping-cart-total h4 span {
@@ -1698,7 +1701,7 @@ textarea:focus {
           color: #ff3535; }
 
 .stick .logo {
-  padding-top: 25px; }
+  padding-top: 15px; }
 
 .stick .main-menu > nav > ul > li > a {
   line-height: 80px; }
@@ -1837,7 +1840,7 @@ textarea:focus {
           border-radius: 5px 0 0 5px;
           border-style: none none none solid;
           border-width: medium medium medium 1px;
-          color: #000000;
+          color: #333;
           font-size: 18px;
           height: 100%;
           padding: 0 15px 0 14px;
@@ -1881,7 +1884,7 @@ textarea:focus {
               position: relative;
               width: 10px;
               margin-top: 25px;
-              border-bottom: 1px solid #1f2226;
+              border-bottom: 1px solid #333;
               -webkit-transition: all 250ms ease-out;
               -o-transition: all 250ms ease-out;
               transition: all 250ms ease-out; }
@@ -1894,7 +1897,7 @@ textarea:focus {
                 -webkit-transform: rotate(90deg);
                 -ms-transform: rotate(90deg);
                 transform: rotate(90deg);
-                border-bottom: 1px solid #1f2226;
+                border-bottom: 1px solid #333;
                 -webkit-transition: 0.4s;
                 -o-transition: 0.4s;
                 transition: 0.4s; }
@@ -1913,14 +1916,14 @@ textarea:focus {
           .mobile-off-canvas-active .header-mobile-aside-wrap .mobile-menu-wrap .mobile-navigation nav .mobile-menu li ul li a {
             padding: 10px 15px 5px;
             font-size: 14px;
-            color: #000000;
+            color: #333;
             font-weight: 300; }
             .mobile-off-canvas-active .header-mobile-aside-wrap .mobile-menu-wrap .mobile-navigation nav .mobile-menu li ul li a:hover {
               color: #ff3535; }
           .mobile-off-canvas-active .header-mobile-aside-wrap .mobile-menu-wrap .mobile-navigation nav .mobile-menu li ul li ul li a {
             padding: 10px 30px 5px;
             font-size: 14px;
-            color: #000000;
+            color: #333;
             font-weight: 300; }
     .mobile-off-canvas-active .header-mobile-aside-wrap .mobile-curr-lang-wrap {
       border-bottom: 1px solid #ddd;
@@ -2068,11 +2071,11 @@ textarea:focus {
   font-weight: 600;
   display: inline-block;
   line-height: 1;
-  border: 2px solid #000000;
+  border: 2px solid #333;
   padding: 14px 30px 18px; }
   .single-slider .slider-content .slider-btn a i {
     font-size: 16px;
-    color: #1f2226;
+    color: #333;
     margin-left: 18px;
     position: relative;
     top: 2px;
@@ -2128,7 +2131,7 @@ textarea:focus {
 .single-slider .slider-content-2 p {
   font-size: 16px;
   line-height: 27px;
-  color: #1f2226;
+  color: #333;
   margin: 23px 0px 27px; }
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .single-slider .slider-content-2 p {
@@ -2143,11 +2146,11 @@ textarea:focus {
   font-weight: 600;
   display: inline-block;
   line-height: 1;
-  border: 2px solid #000000;
+  border: 2px solid #333;
   padding: 14px 30px 18px; }
   .single-slider .slider-content-2 .slider-btn a i {
     font-size: 16px;
-    color: #1f2226;
+    color: #333;
     margin-left: 18px;
     position: relative;
     top: 2px;
@@ -2285,7 +2288,7 @@ textarea:focus {
   animation-name: fadeInRight; }
 
 .nav-style-1.owl-carousel .owl-nav div {
-  color: #1f2226;
+  color: #333;
   display: inline-block;
   font-size: 22px;
   left: 18px;
@@ -2450,7 +2453,7 @@ textarea:focus {
       .slider-area .nav-style-2 .owl-nav {
         right: 20px; } }
     .slider-area .nav-style-2 .owl-nav div {
-      color: #000000;
+      color: #333;
       width: 50px;
       height: 50px;
       line-height: 53px;
@@ -2468,7 +2471,7 @@ textarea:focus {
           line-height: 43px;
           font-size: 15px; } }
       .slider-area .nav-style-2 .owl-nav div:hover {
-        background-color: #1f2226;
+        background-color: #333;
         color: #ffffff; }
     .slider-area .nav-style-2 .owl-nav .owl-prev {
       margin-bottom: 62px; }
@@ -2495,8 +2498,8 @@ textarea:focus {
       margin: 14px 0px;
       width: 10px; }
       .slider-area .dot-style-1 .owl-dots .owl-dot.active {
-        background-color: #1f2226;
-        border: 1px solid #1f2226; }
+        background-color: #333;
+        border: 1px solid #333; }
 
 .slider-height-3 {
   height: 840px;
@@ -2562,7 +2565,7 @@ textarea:focus {
       bottom: 20px;
       left: 10px; } }
   .slider-area .nav-style-3 .owl-nav div {
-    color: #000000;
+    color: #333;
     width: 50px;
     height: 50px;
     line-height: 53px;
@@ -2599,7 +2602,7 @@ textarea:focus {
         line-height: 32px;
         font-size: 14px; } }
     .slider-area .nav-style-3 .owl-nav div:hover {
-      background-color: #1f2226;
+      background-color: #333;
       color: #ffffff; }
     .slider-area .nav-style-3 .owl-nav div span {
       position: absolute;
@@ -2789,7 +2792,7 @@ textarea:focus {
     font-size: 26px;
     font-weight: 500;
     margin: 0;
-    color: #000000;
+    color: #333;
     line-height: 36px; }
     @media only screen and (max-width: 767px) {
       .single-banner .banner-content-4 h3 {
@@ -2959,7 +2962,7 @@ textarea:focus {
         .product-tab-list a h4 {
           padding: 9px 15px 12px; } }
     .product-tab-list a.active h4 {
-      background-color: #1f2226;
+      background-color: #333;
       color: #ffffff; }
   @media only screen and (max-width: 767px) {
     .product-tab-list.pb-60 {
@@ -3071,7 +3074,7 @@ textarea:focus {
             .ht-products .ht-product .ht-product-inner .ht-product-image-wrap .ht-product-image .ht-product-image-slider .slick-arrow:focus {
               outline: none; }
             .ht-products .ht-product .ht-product-inner .ht-product-image-wrap .ht-product-image .ht-product-image-slider .slick-arrow:hover {
-              color: #000000; }
+              color: #333; }
           .ht-products .ht-product .ht-product-inner .ht-product-image-wrap .ht-product-image .ht-product-image-slider .slick-dots {
             position: absolute;
             display: -webkit-box;
@@ -3166,7 +3169,7 @@ textarea:focus {
           .ht-products .ht-product .ht-product-inner .ht-product-image-wrap .ht-product-action ul li {
             padding: 5px; }
             .ht-products .ht-product .ht-product-inner .ht-product-image-wrap .ht-product-action ul li a {
-              color: #000000;
+              color: #333;
               text-decoration: none;
               display: -webkit-box;
               display: -ms-flexbox;
@@ -3345,7 +3348,7 @@ textarea:focus {
           .ht-products .ht-product .ht-product-inner .ht-product-content .ht-product-action ul li {
             padding: 5px 10px; }
             .ht-products .ht-product .ht-product-inner .ht-product-content .ht-product-action ul li a {
-              color: #000000;
+              color: #333;
               text-decoration: none;
               display: -webkit-box;
               display: -ms-flexbox;
@@ -3979,7 +3982,7 @@ textarea:focus {
       font-weight: 600;
       font-size: 13px;
       text-transform: uppercase;
-      background-color: #1f2226;
+      background-color: #333;
       display: inline-block;
       line-height: 1;
       padding: 23px 38px 23px;
@@ -3996,7 +3999,7 @@ textarea:focus {
         border: none; }
   .product-details-content .pro-details-quality .pro-details-wishlist a {
     font-size: 18px;
-    color: #1f2226; }
+    color: #333; }
     .product-details-content .pro-details-quality .pro-details-wishlist a:hover {
       color: #ff3535; }
   .product-details-content .pro-details-quality .pro-details-compare a {
@@ -4103,7 +4106,7 @@ textarea:focus {
   justify-content: center; }
 
 .quickview-wrap .nav-style-2.owl-carousel > .owl-nav div {
-  color: #1f2226;
+  color: #333;
   display: inline-block;
   font-size: 13px;
   left: 0px;
@@ -4146,7 +4149,7 @@ textarea:focus {
   font-weight: 600;
   text-transform: uppercase;
   line-height: 1;
-  border: 2px solid #000000;
+  border: 2px solid #333;
   padding: 18px 28px 18px; }
   .show-more-btn a:hover {
     border: 2px solid #ff3535;
@@ -4230,7 +4233,7 @@ textarea:focus {
     line-height: 26px;
     font-size: 16px;
     margin: 0;
-    color: #1f2226; }
+    color: #333; }
     @media only screen and (min-width: 768px) and (max-width: 991px) {
       .single-feature .feature-content p {
         font-size: 13px; } }
@@ -4626,7 +4629,7 @@ textarea:focus {
     position: absolute;
     width: 18px;
     height: 1px;
-    background-color: #1f2226;
+    background-color: #333;
     content: "";
     right: -21px;
     top: 12px;
@@ -4765,7 +4768,7 @@ textarea:focus {
         height: 48px;
         background-color: #fff;
         font-size: 20px;
-        color: #000000;
+        color: #333;
         display: inline-block;
         text-align: center;
         line-height: 52px; }
@@ -4830,8 +4833,8 @@ textarea:focus {
       margin-right: 0px; }
   .shop-list-wrap .shop-list-content .ht-product-list-action a {
     font-size: 20px;
-    color: #000000;
-    border: 1px solid #000000;
+    color: #333;
+    border: 1px solid #333;
     display: inline-block;
     padding: 12px 19px 8px;
     margin-right: 8px; }
@@ -4873,7 +4876,7 @@ textarea:focus {
       background-color: #ff3535; }
   .shop-list-wrap .shop-list-paragraph p {
     line-height: 25px;
-    color: #000000;
+    color: #333;
     font-family: "Roboto", sans-serif;
     margin-bottom: 30px; }
     @media only screen and (max-width: 767px) {
@@ -5366,7 +5369,7 @@ textarea:focus {
             padding: 5px 12px 6px;
             font-size: 13px; } }
         .product-details-img .zoompro-span .product-video a:hover {
-          background-color: #1f2226; }
+          background-color: #333; }
         .product-details-img .zoompro-span .product-video a i {
           position: relative;
           top: 1px; }
@@ -5380,7 +5383,7 @@ textarea:focus {
         padding: 0 30px 0 45px;
         margin-bottom: 20px; } }
     .product-details-img .product-dec-slider .product-dec-icon {
-      color: #1f2226;
+      color: #333;
       display: inline-block;
       font-size: 13px;
       left: 30px;
@@ -5456,7 +5459,7 @@ textarea:focus {
       border: 1px solid #e1e2e2;
       text-align: center;
       font-size: 13px;
-      color: #1f2226; }
+      color: #333; }
       .product-details-img .product-dec-slider-2 .product-dec-icon:hover {
         background-color: #ff3535;
         border: 1px solid #ff3535;
@@ -5526,7 +5529,7 @@ textarea:focus {
           margin: 0 32px 0 0;
           font-size: 16px; } }
       .description-review-wrapper .description-review-topbar a.active {
-        color: #1f2226;
+        color: #333;
         font-weight: 500; }
       .description-review-wrapper .description-review-topbar a::after {
         content: "";
@@ -5683,7 +5686,7 @@ textarea:focus {
     list-style: outside none none;
     margin: 0 0 13px; }
     .description-review-wrapper .description-review-bottom .product-anotherinfo-wrapper ul li span {
-      color: #1f2226;
+      color: #333;
       display: inline-block;
       font-weight: 500;
       margin: 0 26px 0 0;
@@ -5795,7 +5798,7 @@ h3.cart-page-title {
     .cart-table-content table tbody > tr td.product-price-cart {
       width: 435px; }
       .cart-table-content table tbody > tr td.product-price-cart span {
-        color: #1f2226; }
+        color: #333; }
     .cart-table-content table tbody > tr td.product-quantity {
       width: 435px; }
       .cart-table-content table tbody > tr td.product-quantity .cart-plus-minus {
@@ -5855,7 +5858,7 @@ h3.cart-page-title {
       padding: 7px 12px;
       text-transform: uppercase; }
       .cart-table-content table tbody > tr td.product-wishlist-cart > a:hover {
-        background-color: #1f2226; }
+        background-color: #333; }
     .cart-table-content table tbody > tr td {
       font-size: 16px;
       padding: 30px 0;
@@ -5999,7 +6002,7 @@ h3.cart-page-title {
           height: 40px; }
       .cart-tax .tax-wrapper .tax-select-wrapper button.cart-btn-2,
       .discount-code-wrapper .tax-wrapper .tax-select-wrapper button.cart-btn-2 {
-        background-color: #1f2226;
+        background-color: #333;
         border: medium none;
         color: #fff;
         cursor: pointer;
@@ -6028,7 +6031,7 @@ h3.cart-page-title {
       padding-left: 10px; }
     .cart-tax .discount-code form button.cart-btn-2,
     .discount-code-wrapper .discount-code form button.cart-btn-2 {
-      background-color: #1f2226;
+      background-color: #333;
       border: medium none;
       color: #fff;
       cursor: pointer;
@@ -6123,7 +6126,7 @@ h3.cart-page-title {
     .grand-totall h4.grand-totall-title span {
       float: right; }
   .grand-totall a {
-    background-color: #1f2226;
+    background-color: #333;
     color: #fff;
     display: block;
     font-size: 13px;
@@ -6503,7 +6506,7 @@ h3.cart-page-title {
     height: 50px;
     margin-bottom: 30px;
     padding: 2px 20px 2px 20px;
-    color: #1f2226; }
+    color: #333; }
   .blog-reply-wrapper .blog-form .text-leave textarea {
     background: transparent none repeat scroll 0 0;
     border: 1px solid #eaeaea;
@@ -6528,7 +6531,7 @@ h3.cart-page-title {
     width: inherit;
     font-size: 13px; }
     .blog-reply-wrapper .blog-form .text-leave input:hover {
-      background-color: #1f2226; }
+      background-color: #333; }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .blog-details-wrapper.ml-20 {
@@ -6727,7 +6730,7 @@ h3.cart-page-title {
 .contact-info-area p {
   margin: 0 0 0px;
   font-size: 15px;
-  color: #1f2226;
+  color: #333;
   line-height: 26px; }
 
 .contact-info-area .contact-info-wrap {
@@ -6805,7 +6808,7 @@ h3.cart-page-title {
     height: 50px;
     padding: 2px 24px;
     margin-bottom: 15px;
-    color: #1f2226; }
+    color: #333; }
   .contact-from textarea {
     height: 120px;
     padding: 16px 24px 2px; }
@@ -6815,7 +6818,7 @@ h3.cart-page-title {
     background-color: transparent;
     text-align: center;
     color: #fff;
-    background-color: #1f2226;
+    background-color: #333;
     display: block;
     width: 100%;
     text-transform: uppercase;
@@ -7032,9 +7035,9 @@ h3.cart-page-title {
     font-size: 14px;
     padding: 0 20px; }
     .checkout-login-info3 form input[type="text"]:focus {
-      border: 1px solid #1f2226; }
+      border: 1px solid #333; }
   .checkout-login-info3 form input[type="submit"] {
-    background: #1f2226 none repeat scroll 0 0;
+    background: #333 none repeat scroll 0 0;
     border: medium none;
     color: #fff;
     height: 50px;
@@ -7083,7 +7086,7 @@ h3.cart-page-title {
   height: 50px;
   background-color: transparent;
   padding: 2px 20px;
-  color: #1f2226;
+  color: #333;
   font-size: 13px; }
   .billing-info-wrap .billing-info input:focus {
     border: 1px solid #343538; }
@@ -7102,7 +7105,7 @@ h3.cart-page-title {
   border: 1px solid #e6e6e6;
   -moz-appearance: none;
   -webkit-appearance: none;
-  color: #1f2226;
+  color: #333;
   font-size: 13px;
   height: 50px;
   padding: 2px 20px;
@@ -7112,7 +7115,7 @@ h3.cart-page-title {
     background: #fff;
     border: 0px solid #626262;
     padding-left: 10px;
-    color: #1f2226;
+    color: #333;
     font-size: 12px; }
 
 .billing-info-wrap .checkout-account input {
@@ -7123,10 +7126,10 @@ h3.cart-page-title {
   width: 10px;
   position: relative;
   top: 6px;
-  color: #1f2226; }
+  color: #333; }
 
 .billing-info-wrap .checkout-account span {
-  color: #1f2226;
+  color: #333;
   font-weight: 400;
   margin: 0 0 0 12px;
   font-size: 14px;
@@ -7144,7 +7147,7 @@ h3.cart-page-title {
   border: 1px solid #e8e8e8;
   height: 50px;
   background-color: transparent;
-  color: #1f2226;
+  color: #333;
   font-size: 13px;
   padding: 2px 20px; }
   .billing-info-wrap .checkout-account-toggle input:focus {
@@ -7156,7 +7159,7 @@ h3.cart-page-title {
 .billing-info-wrap .additional-info-wrap {
   margin: 22px 0 0; }
   .billing-info-wrap .additional-info-wrap label {
-    color: #1f2226;
+    color: #333;
     font-size: 14px;
     text-transform: uppercase;
     display: block;
@@ -7166,7 +7169,7 @@ h3.cart-page-title {
     background-color: #f7f7f7;
     border-color: #f7f7f7;
     padding: 20px;
-    color: #1f2226;
+    color: #333;
     font-size: 13px; }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -7232,7 +7235,7 @@ h3.cart-page-title {
         float: right;
         font-size: 12px;
         text-align: right;
-        color: #1f2226;
+        color: #333;
         text-transform: capitalize; }
     .your-order-area .your-order-wrap .your-order-info.order-total {
       padding: 15px 0 10px; }
@@ -7378,7 +7381,7 @@ h3.cart-page-title {
         height: 50px;
         background-color: transparent;
         padding: 2px 20px;
-        color: #1f2226;
+        color: #333;
         font-size: 13px; }
         .myaccount-content .account-details-form .single-input-item input:focus {
           border: 1px solid #343538; }
@@ -7391,7 +7394,7 @@ h3.cart-page-title {
         color: #fff;
         font-size: 13px; }
         .myaccount-content .account-details-form .single-input-item button:hover {
-          background-color: #1f2226; }
+          background-color: #333; }
 
 .myaccount-table {
   white-space: nowrap;
@@ -7403,7 +7406,7 @@ h3.cart-page-title {
     background-color: #f8f8f8;
     border-color: #ccc;
     border-bottom: 0;
-    color: #1f2226; }
+    color: #333; }
   .myaccount-table table td,
   .myaccount-table .table td {
     padding: 10px;
