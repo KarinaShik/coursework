@@ -1,0 +1,131 @@
+<div th:fragment="header">
+    <header class="header-area sticky-bar">
+        <div class="main-header-wrap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-2 col-lg-2">
+                        <div class="logo pt-40">
+                            <a href="/">
+                                <h1>iClock</h1>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-xl-7 col-lg-7 ">
+                        <div class="main-menu">
+                            <nav>
+                                <ul>
+                                    <li class="angle-shape"><a href="/">Home </a>
+                                    </li>
+                                    <li class="angle-shape"><a href="/shop"> Shop <span>hot</span> </a></li>
+                                    <li><a href="/contact"> Contact us </a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-3">
+                        <div class="header-right-wrap pt-40">
+                            <div class="header-search">
+                                <a class="search-active" href="#"><i class="sli sli-magnifier"></i></a>
+                            </div>
+                            <div class="setting-wrap">
+                                <button class="setting-active">
+                                    <i class="sli sli-settings"></i>
+                                </button>
+                                <div class="setting-content">
+                                    <ul>
+                                        <li>
+                                            <h4>Account</h4>
+                                            <ul>
+                                                <li><a href="/account">My Account</a></li>
+                                                <li><a href="/authorization">Login / Register</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- main-search start -->
+            <div class="main-search-active">
+                <div class="sidebar-search-icon">
+                    <button class="search-close"><span class="sli sli-close"></span></button>
+                </div>
+                <div class="sidebar-search-input">
+                    <form>
+                        <div class="form-search">
+                            <input id="search" class="input-text" value="" placeholder="Search Now" type="search">
+                            <button>
+                                <i class="sli sli-magnifier"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="header-small-mobile">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-6">
+                        <div class="mobile-logo">
+                            <a href="/">
+                                <h1>iClock</h1>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="header-right-wrap">
+                            <div class="mobile-off-canvas">
+                                <a class="mobile-aside-button" href="#"><i class="sli sli-menu"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="mobile-off-canvas-active">
+        <a class="mobile-aside-close"><i class="sli sli-close"></i></a>
+        <div class="header-mobile-aside-wrap">
+            <div class="mobile-search">
+                <form class="search-form" action="#">
+                    <input type="text" placeholder="Search entire store…">
+                    <button class="button-search"><i class="sli sli-magnifier"></i></button>
+                </form>
+            </div>
+            <div class="mobile-menu-wrap">
+                <!-- mobile menu start -->
+                <div class="mobile-navigation">
+                    <!-- mobile menu navigation start -->
+                    <nav>
+                        <ul class="mobile-menu">
+                            <li class="menu-item-has-children"><a href="/">Home</a></li>
+                            <li class="menu-item-has-children "><a href="/shop">Shop</a></li>
+                            <li><a href="/contact">Contact us</a></li>
+                        </ul>
+                    </nav>
+                    <!-- mobile menu navigation end -->
+                </div>
+                <!-- mobile menu end -->
+            </div>
+            <div class="mobile-menu-wrap">
+                <div class="mobile-navigation">
+                    <nav>
+                        <ul class="mobile-menu">
+                            <li class="menu-item-has-children"><a href="/account">My Account</a></li>
+                            <li class="menu-item-has-children "><a href="/authorization">Login / Register</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="mobile-social-wrap">
+                <a class="facebook" href="#"><i class="sli sli-social-facebook"></i></a>
+                <a class="twitter" href="#"><i class="sli sli-social-twitter"></i></a>
+                <a class="pinterest" href="#"><i class="sli sli-social-pinterest"></i></a>
+                <a class="instagram" href="#"><i class="sli sli-social-instagram"></i></a>
+                <a class="google" href="#"><i class="sli sli-social-google"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
