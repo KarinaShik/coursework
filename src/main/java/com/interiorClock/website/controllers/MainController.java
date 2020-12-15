@@ -25,30 +25,6 @@ public class MainController {
         return "product-details";
     }
 
-    @GetMapping("/wishlist")
-    public String Wishlist(Model model) {
-        model.addAttribute("title", "Wishlist");
-        return "wishlist";
-    }
-
-    @GetMapping("/compare")
-    public String Compare(Model model) {
-        model.addAttribute("title", "Compare");
-        return "compare-page";
-    }
-
-    @GetMapping("/cart")
-    public String Cart(Model model) {
-        model.addAttribute("title", "CartPage");
-        return "cart-page";
-    }
-
-    @GetMapping("/checkout")
-    public String Checkout(Model model) {
-        model.addAttribute("title", "Checkout");
-        return "checkout";
-    }
-
     @GetMapping("/contact")
     public String Contact(Model model) {
         model.addAttribute("title", "Contact us");
