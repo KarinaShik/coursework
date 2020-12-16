@@ -46,9 +46,15 @@ public class ClockController {
         ClockEntity updClock = clockRepository.findById(clockId).get();
 
         updClock.setTitle(clock.getTitle());
+        updClock.setCategory(clock.getCategory());
         updClock.setDescription(clock.getDescription());
         updClock.setPrice(clock.getPrice());
+        updClock.setMovement(clock.getMovement());
+        updClock.setMaterial(clock.getMaterial());
+        updClock.setDimensions(clock.getDimensions());
+        updClock.setWeight(clock.getWeight());
         updClock.setImgRef(clock.getImgRef());
+        updClock.setOtherInfo(clock.getOtherInfo());
 
         final ClockEntity updatedClock = clockRepository.save(updClock);
         return ResponseEntity.ok(updatedClock);
