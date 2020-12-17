@@ -65,7 +65,7 @@
                     <div class="product-details-content ml-30">
                         <h2 th:text="${el.title}"></h2>
                         <div class="product-details-price">
-                            <span th:text="${el.price}"></span>
+                            <span th:text="'$' + ${el.price}"></span>
                         </div>
                         <div class="pro-details-rating-wrap">
                             <div class="pro-details-rating">
@@ -264,7 +264,7 @@
                                     <div class="ht-product-categories"><a th:text="${el.category}"></a></div>
                                     <h4 class="ht-product-title"><a th:text="${el.title}"></a></h4>
                                     <div class="ht-product-price">
-                                        <span class="new" th:text="${el.price}"></span>
+                                        <span class="new" th:text="'$' + ${el.price}"></span>
                                     </div>
                                     <div class="ht-product-ratting-wrap">
                                         <span class="ht-product-ratting">
