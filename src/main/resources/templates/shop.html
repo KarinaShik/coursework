@@ -42,7 +42,7 @@
                                     <option value="">In stock</option>
                                 </select>
                             </div>
-                            <p>Showing 1–15 of 20 results</p>
+                            <p th:text="'Showing 1–' + ${countClocks} + ' of ' + ${countClocks} + ' results'"></p>
                         </div>
                         <div class="shop-tab nav">
                             <a class="active" href="#shop-1" data-toggle="tab">
@@ -124,7 +124,7 @@
                                                 <div class="shop-list-price-action-wrap">
                                                     <div class="shop-list-price-ratting">
                                                         <div class="ht-product-list-price">
-                                                            <span th:text="${el.price}" class="new"></span>
+                                                            <span th:text="'$' + ${el.price}" class="new"></span>
                                                         </div>
                                                         <div class="ht-product-list-ratting">
                                                             <i class="sli sli-star"></i>
