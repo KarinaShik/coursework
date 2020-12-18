@@ -18,11 +18,16 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(HttpSecurity http) throws Exception {
 
         http
+                .cors().and().csrf().disable()
                 .authorizeRequests()
                     .antMatchers(HttpMethod.GET, "/**/*.css", "/**/*.js", "/**/*.scss",
                         "/**/*.png", "/**/*.svg", "/**/*.gif",
                         "/**/*.woff", "/**/*.woff2", "/**/*.ttf").permitAll()
                     .antMatchers("/", "/shop", "/shop/product/{id}","/contact").permitAll()
+
+//                    .antMatchers("/api/v1/clocks/get-all-clocks", "/api/v1/clocks/get-clock/{id}",
+//                            "/api/v1/clocks/create-clock", "/api/v1/clocks/update-clock/{id}",
+//                            "/api/v1/clocks/delete-clock/{id}").permitAll()
                     .anyRequest().authenticated()
                 .and()
                     .formLogin()
