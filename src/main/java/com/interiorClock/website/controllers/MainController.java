@@ -8,7 +8,10 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
+import java.time.Clock;
 import java.util.ArrayList;
 import java.util.Optional;
 
@@ -80,15 +83,68 @@ public class MainController {
         return "contact-us";
     }
 
-    @GetMapping("/account")
-    public String Account(Model model) {
-        model.addAttribute("pageTitle", "Account");
-        return "my-account";
-    }
-
     @GetMapping("/authorization")
     public String Authorization(Model model) {
         model.addAttribute("pageTitle", "Authorization");
         return "login-register";
+    }
+
+    @GetMapping("/account")
+    public String Account(Model model) {
+        model.addAttribute("pageTitle", "Account");
+
+        Iterable<ClockEntity> clocks = clockRepository.findAll(Sort.by(Sort.Direction.DESC, "clockId"));
+        model.addAttribute("clocks", clocks);
+
+        return "my-account";
+    }
+
+    @PostMapping("/account/admin/product/add")
+    public String AdminAddClock(@RequestParam String clock_title, @RequestParam String clock_category,
+                                  @RequestParam String clock_description, @RequestParam Double clock_price,
+                                  @RequestParam String clock_movement, @RequestParam String clock_material,
+                                  @RequestParam String clock_dimensions, @RequestParam Double clock_weight,
+                                  @RequestParam String clock_img, @RequestParam String clock_other_info,
+                                  Model model) {
+
+        ClockEntity newClock = new ClockEntity(clock_title, clock_category, clock_description,
+                clock_price, clock_movement, clock_material, clock_dimensions, clock_weight, clock_img,
+                clock_other_info);
+
+        clockRepository.save(newClock);
+        return "redirect:/account";
+    }
+
+    @PostMapping("/account/admin/product/{id}/edit")
+    public String AdminEditClock(@PathVariable(value = "id") Integer id, @RequestParam String clock_title,
+                                   @RequestParam String clock_category, @RequestParam String clock_description,
+                                   @RequestParam Double clock_price, @RequestParam String clock_movement,
+                                   @RequestParam String clock_material, @RequestParam String clock_dimensions,
+                                   @RequestParam Double clock_weight, @RequestParam String clock_img,
+                                   @RequestParam String clock_other_info, Model model) {
+
+        ClockEntity clock = clockRepository.findById(id).orElseThrow();
+
+        clock.setTitle(clock_title);
+        clock.setCategory(clock_category);
+        clock.setDescription(clock_description);
+        clock.setPrice(clock_price);
+        clock.setMovement(clock_movement);
+        clock.setMaterial(clock_material);
+        clock.setDimensions(clock_dimensions);
+        clock.setWeight(clock_weight);
+        clock.setImgRef(clock_img);
+        clock.setOtherInfo(clock_other_info);
+
+        clockRepository.save(clock);
+        return "redirect:/account";
+    }
+
+    @PostMapping("/account/admin/product/{id}/delete")
+    public String AdminDeleteClock(@PathVariable(value = "id") Integer id, Model model) {
+
+        ClockEntity clock = clockRepository.findById(id).orElseThrow();
+        clockRepository.delete(clock);
+        return "redirect:/account";
     }
 }
