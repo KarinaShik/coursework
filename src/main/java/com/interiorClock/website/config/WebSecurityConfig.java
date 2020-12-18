@@ -24,10 +24,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                         "/**/*.png", "/**/*.svg", "/**/*.gif",
                         "/**/*.woff", "/**/*.woff2", "/**/*.ttf").permitAll()
                     .antMatchers("/", "/shop", "/shop/product/{id}","/contact").permitAll()
-
-//                    .antMatchers("/api/v1/clocks/get-all-clocks", "/api/v1/clocks/get-clock/{id}",
-//                            "/api/v1/clocks/create-clock", "/api/v1/clocks/update-clock/{id}",
-//                            "/api/v1/clocks/delete-clock/{id}").permitAll()
+                    .antMatchers("/api/**", "/account/admin/**").hasRole("ADMIN")
                     .anyRequest().authenticated()
                 .and()
                     .formLogin()
